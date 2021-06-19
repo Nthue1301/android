@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/screen"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonReady"
+        android:layout_width="300dp"
+        android:layout_height="280dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="51dp"
+        android:background="@drawable/ready"
+        android:fontFamily="@font/arial"
+        android:text="Ready!"
+        android:textColor="#fff"
+        android:textSize="50sp" />
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonReady"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="51dp"
+        android:fontFamily="@font/arial"
+        android:gravity="center"
+        android:text="Easy: let's practice basic grammar and vocabulary!"
+        android:textColor="#333"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+</RelativeLayout>

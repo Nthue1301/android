@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/exit" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:fontFamily="@font/arial"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Hi, John!"
+            android:textSize="45sp"
+            android:textColor="#BF9FC1"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"/>
+
+        <TextView
+            android:fontFamily="@font/arial"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="How do you feel today?"
+            android:textColor="#AE5050"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonEasy"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/vector"
+            android:fontFamily="@font/arial"
+            android:text="Easy"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonMedium"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonhong"
+            android:fontFamily="@font/arial"
+            android:maxWidth="350dp"
+            android:text="Medium"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textStyle="bold"
+            android:fontFamily="@font/arial"
+            android:id="@+id/buttonDifficult"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttondo"
+            android:maxWidth="350dp"
+            android:text="Difficult"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textStyle="bold"
+            android:fontFamily="@font/arial"
+            android:id="@+id/buttonQuickTest"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonvang"
+            android:maxWidth="350dp"
+            android:text="Quick Test"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</LinearLayout>
