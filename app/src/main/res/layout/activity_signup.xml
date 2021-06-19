@@ -22,6 +22,15 @@
         android:layout_weight="4"
         android:gravity="center"
         android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/arial"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="#D9401F"
+            android:text="Register"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"/>
 
         <EditText
             android:id="@+id/username"
@@ -30,9 +39,17 @@
             android:background="@drawable/login_input"
             android:hint="Username"
             android:maxWidth="350dp" />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_input"
+            android:id="@+id/email"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:inputType="textEmailAddress"/>
 
         <EditText
-            android:id="@+id/login_password"
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="51dp"
             android:layout_marginTop="20dp"
@@ -40,6 +57,13 @@
             android:hint="Password"
             android:inputType="textPassword"
             android:maxWidth="350dp" />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_input"
+            android:hint="Confirm password"
+            android:id="@+id/cofirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -53,19 +77,14 @@
                 />
 
             <TextView
+                android:textColor="#D9401F"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/signup_agree"
-                android:text="Keep me signin!"
+                android:text="I agree all statements in terms of service "
                 android:layout_marginLeft="-10dp"/>
-            <TextView
-                android:id="@+id/login_forget"
-                android:layout_centerVertical="true"
-                android:layout_alignParentEnd="true"
-                android:text="Forget password?"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+
         </RelativeLayout>
     </LinearLayout>
 
@@ -75,7 +94,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/linear_gradient_button"
         android:maxWidth="350dp"
-        android:text="Login"
+        android:text="Create account"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:layout_marginBottom="50dp"/>
@@ -86,7 +105,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:text="Don't have a account? "
+            android:text="Already have an account? "
             android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -95,7 +114,7 @@
             android:clickable="true"
             android:focusable="true"
             android:textColor="#D9401F"
-            android:text="Create new!"
+            android:text="Log in!"
             android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
